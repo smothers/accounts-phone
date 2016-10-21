@@ -483,7 +483,7 @@ Meteor.methods({verifyPhone: function (phone, code, newPassword) {
 
             // Replace all valid login tokens with new ones (changing
             // password should invalidate existing sessions).
-            Accounts._clearAllLoginTokens(user._id);
+            //Accounts._clearAllLoginTokens(user._id);
 
             return {userId: user._id};
         }
@@ -708,4 +708,3 @@ var getRandomCode = function (length) {
 var getRandomDigit = function () {
     return Math.floor((Math.random() * 9) + 1);
 }
-
