@@ -1,6 +1,6 @@
 {
   "name": "accounts-phone",
-  "version": "0.0.21",
+  "version": "0.0.24",
   "main": "./dist/accounts-phone.bundle.min.js",
   "dependencies": {
     "meteor-client-side": "~0.2.3",
