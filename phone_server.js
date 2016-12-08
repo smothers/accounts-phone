@@ -670,10 +670,10 @@ var cloneAttemptWithConnection = function (connection, attempt) {
 // Return normalized phone format
 var normalizePhone = function (phone) {
     // If phone equals to one of admin phone numbers return it as-is
-    if (phone && Accounts._options.adminPhoneNumbers && Accounts._options.adminPhoneNumbers.indexOf(phone) != -1) {
+    if (phone && Accounts._options.adminPhoneNumbers && Accounts._options.adminPhoneNumbers.indexOf(phone) !== -1) {
         return phone;
     }
-    return Phone(phone)[0];
+    return '+' + phone.replace(/\D/g, '');
 };
 
 /**
